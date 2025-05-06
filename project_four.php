@@ -18,18 +18,15 @@
     Show the total amount clearly with a message. */
     $units = 30;
     $bill = 0;
+
     if ($units <= 50) {
         $bill = $units * 3.50;
-        echo "</br>";
     } else if ($units <= 100) {
         $bill = 50 * 3.50 + ($units - 50) * 4.00;
-        echo $units . "</br>";
     } else if ($units <= 200) {
         $bill = 50 * 3.50 + 50 * 4.00 + ($units - 100) * 5.20;
-        echo $units . "</br>";
     } else {
         $bill = 50 * 3.50 + 50 * 4.00 + 100 * 5.20 + ($units - 200) * 6.50;
-        echo $units . "</br>";
     }
 
     echo "User  " . $units . "  units used </br> and this bill is " . $bill . "Taka";

@@ -10,13 +10,12 @@
 <body>
     <?php
     $celsius = 15;
-    echo ($celsius * 9 / 5) + 32;
+    echo "Celsius to Fahrenheit: " . ($celsius * 9 / 5) + 32;
 
     echo "</br>";
 
-    //Fahrenheit to Celsius: (fahrenheit - 32) * 5/9
     $fahrenheit = 59;
-    echo ($fahrenheit - 32) * 5 / 9;
+    echo "Fahrenheit to Celsius: " . ($fahrenheit - 32) * 5 / 9;
 
 
     ?>
